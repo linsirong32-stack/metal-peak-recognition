@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重金属识别与浓度监测系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>重金属识别与浓度监测</h1>
+
+        <div class="image-section">
+            <p>系统运行状态：</p>
+            <img id="statusImage" src="images/safe.png" alt="系统状态" class="status-icon">
+            <p id="systemStatusText">系统正在运行，等待输入...</p>
+        </div>
+
+        <div class="input-section">
+            <h2>输入信号峰数据</h2>
+            <p>请输入检测到的信号峰值 (例如: 2.5, 3.1)。</p>
+            <input type="text" id="peakInput" placeholder="输入信号峰值，多个值用逗号隔开">
+            <button id="detectButton">开始检测</button>
+        </div>
+
+        <div class="result-section">
+            <h2>检测结果</h2>
+            <div id="detectionResult">
+                <p>暂无数据。</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

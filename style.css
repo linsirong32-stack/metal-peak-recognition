@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+.image-section {
+    margin-bottom: 30px;
+}
+
+.status-icon {
+    width: 120px; /* 调整图片大小 */
+    height: 120px;
+    border-radius: 50%; /* 如果图片是方形的，可以使其变成圆形 */
+    object-fit: cover;
+    margin-top: 15px;
+    border: 3px solid #ccc;
+}
+
+#systemStatusText {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.input-section {
+    margin-bottom: 30px;
+}
+
+#peakInput {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* 确保 padding 不会增加总宽度 */
+}
+
+#detectButton {
+    background-color: #28a745; /* 绿色按钮 */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#detectButton:hover {
+    background-color: #218838;
+}
+
+.result-section {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 100px; /* 确保结果区域有一定高度 */
+    text-align: left;
+}
+
+#detectionResult p {
+    margin: 8px 0;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+.alert {
+    color: #dc3545; /* 红色警报文字 */
+    font-weight: bold;
+}
+
+.safe {
+    color: #28a745; /* 绿色安全文字 */
+    font-weight: bold;
+}
+
+/* 警报状态下的图片样式 */
+.status-icon.alert-state {
+    border-color: #dc3545;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+}
+
+/* 安全状态下的图片样式 */
+.status-icon.safe-state {
+    border-color: #28a745;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
