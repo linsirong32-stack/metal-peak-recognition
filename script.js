@@ -90,4 +90,5 @@ document.addEventListener('DOMContentLoaded', () => {
             systemStatusText.textContent = '系统正常，环境安全。';
         }
     });
+
 });
